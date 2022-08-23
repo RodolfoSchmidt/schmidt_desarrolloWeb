@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px){
+
+    body{
+        background-color: rgb(24, 24, 24);
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);
+        p{
+            margin: 0.5rem;
+        }
+        .title{
+            font-family: 'league Spartan', sans-serif;
+            color:rgb(217, 236, 192);
+        }
+        
+        
+    }
+
+    header{
+        display: flex; 
+        background-color: rgb(24, 24, 24);
+        margin: 0.1rem;
+        img{
+            width: 100%;
+            height: 10%;
+        }      
+        
+    }
+    main{
+     
+        .img-index{
+            width: 100%;
+            height: 10%;
+            margin: 00.1rem;
+        }
+        
+        iframe{
+            width: 100%;
+            height: 50%;
+            margin: 00.1rem;
+        }
+
+    }
+
+    footer{
+        .footer_img{
+            display: inline-flex;
+            height:  2.5rem;        
+            
+        }
+        .rodockdev{
+            font-family: 'league Spartan', sans-serif;
+            color:rgb(124, 124, 122);
+            font-size: small;
+        }
+    }
+
+    
+}
+    
+@media only screen and (min-width:600px) {
+    body{
+        background-color: rgb(24, 24, 24);
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);
+        font-size: large;
+        p{
+            margin: 0.5rem;
+        }
+        .title{
+            font-family: 'league Spartan', sans-serif;
+            color:rgb(217, 236, 192);
+        }
+        
+        
+    }
+
+    header{
+        display: flex; 
+        background-color: rgb(24, 24, 24);
+        margin: 0.1rem;
+        img{
+            width: 100%;
+            height: 10%;
+        }      
+        
+    }
+    main{
+     
+        .img-index{
+            width: 100%;
+            height: 10%;
+            margin: 00.1rem;
+        }
+        
+        iframe{
+            width: 100%;
+            height: 50%;
+            margin: 00.1rem;
+        }
+
+    }
+
+    footer{
+        .footer_img{
+            display: inline-flex;
+            height:  2.5rem;        
+            
+        }
+        .rodockdev{
+            font-family: 'league Spartan', sans-serif;
+            color:rgb(124, 124, 122);
+            font-size: medium;
+        }
+    }
+
+}
