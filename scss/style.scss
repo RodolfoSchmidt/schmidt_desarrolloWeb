@@ -5,7 +5,7 @@
     list-style: none;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 699px){
 
     .body{
         background-color: rgb(24, 24, 24);
@@ -49,9 +49,8 @@
 
 
     nav{
-        
+        position: absolute;
         background: #343534;
-        height: 3.5rem;
         width: 100%;
         
     }
@@ -61,47 +60,54 @@
         padding: 0.4rem 0.3rem;
     }
     .imglogo{
-        height: 5.9rem;
+        height: 6rem;
     }     
     nav ul{
-        position:fixed;
-        width:70%;
-        height: 50vh;
+        position:absolute;
         background: #181818;
-        top: 23.5rem;
+        opacity: 0.7;
+        top: 3.5em;
         right: -80%;
         text-align: center;
-        transition: all .5s;
+        transition:all 0.7s;
+        z-index: 9999;
     }
     nav ul li{
         display: block;
         margin: 2rem;
         line-height: 2rem;
+        
 
     }
     nav ul li a{
         color: #d9ecc0;
+        text-decoration: none;
         font-size: medium;
         padding: 0.5rem 1rem;
         border-radius: 0.3rem;
         text-transform: uppercase;
+        
     }
     li a.active, li a:hover{
         background:#343534;
         color: #d9ecc0;
         transition: .5s;
+    
+       
     }
     .checkbtn{
-        font-size: 2rem;
-        color:#d9ecc0;
-        float: right;
-        line-height:normal;
-        margin-right: 1rem;
-        margin-top: 0.5rem;
         display: block;
+        color:#d9ecc0;
+        font-size: 2rem;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em; 
+        z-index: 9999;
+        
     }
     #check{
         display: none;
+
     }
     #check:checked ~ ul{
         
@@ -117,7 +123,7 @@
         grid-template-rows: minmax(100px, auto);
       
         img{
-            height:98%;
+            height:78%;
             width: 98%;
         }
 
@@ -130,6 +136,7 @@
             
             .ppm1{
                 margin-left: 5rem;
+                margin-top: 5rem;
                 
 
                 .line{
@@ -145,8 +152,8 @@
        .imgmain1{
         display: none;
         margin-left: 0.6rem;
-        height: 50%;
-        width: 50%;
+        height: 30%;
+        width: 30%;
         justify-self: center;
         align-self: center;
         
@@ -154,7 +161,7 @@
        .imgmain2{
         display: flex;
         margin-left: 0.3rem;
-        height: 65%;
+        height: 45%;
         width:100%;
         align-self: center;
        
@@ -163,10 +170,11 @@
        .imgmain3{
        
         display: flex;
-        margin-left: 4.5rem;
+        justify-content: center;    
+        margin-left: 50%;    
         height: 100%;
         width:150%;
-        align-self: center;
+        
        
        }
        .poemain2{
@@ -174,6 +182,7 @@
         color: aliceblue;
         font-family: 'league Spartan', sans-serif;
         font-size: small;
+        padding-top: 2rem;
         
         }
         .ppm2{
@@ -221,12 +230,14 @@
         .redesfooter{
             display: flex;
             justify-content: center;
-            align-content: space-between;
+            
+            
         }
 
         .footer_img{
-            display: inline-flex;
-            height:  2.5rem;        
+           display: inline-block;
+           padding: 0.5rem;
+            
             
         }
         .devfooter{
@@ -245,9 +256,146 @@
     } 
 
     
-}
+    .titleObras{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 7em;
+        justify-content: center;
+          
+    }
 
-@media only screen and (min-width: 600px) and (max-width: 979px) {
+   .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    justify-content: center;
+    margin:0 auto;
+       
+   }
+
+   .grid-item{
+    position: relative;
+    width: 230px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+    transition: 300ms;
+    }
+   
+    .grid-item:hover{
+        filter:opacity(0.5);
+    }
+
+    .titlemi{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 11em;
+        justify-content: center; 
+    }
+    .pmi{
+        display: block;      
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 0.5rem;
+        font-size: medium;
+    }
+    .formdown{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .button1{
+        border-radius: 3px;
+        display:flex;
+        font-size: larger;
+        color: #d9ecc0;
+        background-color: #343534;
+        margin-bottom: 7rem;
+        margin-top: 2rem;
+
+
+    }
+    .titlenov{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 7em;
+        justify-content: center; 
+        margin-bottom: 5rem;
+    }
+    .pnov{
+        display: block;      
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 0.5rem;
+        font-size: medium; 
+        margin-bottom: 2rem;
+    }
+    .linknov{
+        margin-bottom: 5rem;
+        a{
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 0.5rem;
+        font-size: medium; 
+        }
+        
+        
+    }
+    .containerform{
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        font-size: medium;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .formform{
+        background: #343534;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+        h3{
+            color: #d9ecc0;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+        input, textarea{
+            border: 0;
+            margin: 1rem 0;
+            padding: 2rem;
+            outline: none;
+            background: #d9ecc0;
+        }
+        button{
+            padding: 1rem;
+            background: #181818;
+            color: #d9ecc0;
+            font-size: large;
+            border: 2;
+            outline: none;
+            cursor: pointer;
+            margin: 2rem auto 0;
+            border-radius: 30px;
+
+        }
+    }
+
+}
+   
+
+
+@media only screen and (min-width:700px) and (max-width: 979px) {
     .body{
         background-color: rgb(24, 24, 24);
          
@@ -433,28 +581,26 @@
         
         display: flex;
         flex-direction: column;
-        gap: 2rem;
         
 
 
         .titulofooter{
+            margin-top: 2rem;
             display: flex;
             justify-content: center;
-            padding-top: 3rem;
-            font-size: large;
            
         }
 
         .redesfooter{
             display: flex;
             justify-content: center;
-            align-content: space-around;
-           
+            
+            
         }
 
         .footer_img{
-            display: inline-flex;
-            height:  2.5rem;    
+           display: inline-block;
+           padding: 0.5rem;
             
             
         }
@@ -463,15 +609,153 @@
             justify-content: center;
             margin-top: 1rem;
         }
+       
         .rodockdev{
             font-family: 'league Spartan', sans-serif;
             text-decoration: none;
             color:rgb(124, 124, 122);
-            font-size: small;
+            font-size: x-small;
             margin-top: 3rem;                     
+        }
+    } 
+    
+    .titleObras{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 7em;
+        justify-content: center;
+          
+    }
+
+   .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 20px;
+    justify-content: center;
+    margin:0 auto;
+       
+   }
+   .grid-item{
+    position: relative;
+    width: 230px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+    transition: 300ms;
+    }
+   
+    .grid-item:hover{
+        filter:opacity(0.5);
+        
+        
+    }
+    .titlemi{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 11em;
+        justify-content: center; 
+    }
+    .pmi{
+        display: block;      
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 2rem;
+        font-size: medium;
+    }
+    .formdown{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .button1{
+        border-radius: 3px;
+        display:flex;
+        font-size: larger;
+        color: #d9ecc0;
+        background-color: #343534;
+        margin-bottom: 7rem;
+        margin-top: 2rem;
+
+
+    }
+    .titlenov{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 7em;
+        justify-content: center; 
+        margin-bottom: 5rem;
+    }
+    .pnov{
+        display: block;      
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin-left: 3rem;
+        font-size: medium; 
+        margin-bottom: 2rem;
+    }
+    .linknov{
+        margin-bottom: 5rem;
+        margin-left: 3rem;
+        a{
+            font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 0.5rem;
+        font-size: medium; 
+        }
+        
+        
+    }
+     .containerform{
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        font-size: medium;
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .formform{
+        background: #343534;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px;
+        h3{
+            color: #d9ecc0;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+        input, textarea{
+            border: 0;
+            margin: 1rem 0;
+            padding: 2rem;
+            outline: none;
+            background: #d9ecc0;
+        }
+        button{
+            padding: 1rem;
+            background: #181818;
+            color: #d9ecc0;
+            font-size: large;
+            border: 2;
+            outline: none;
+            cursor: pointer;
+            margin: 2rem auto 0;
+            border-radius: 30px;
+
         }
     }
 }
+
 @media only screen and (min-width: 979px) {
     .body{
         background-color: rgb(24, 24, 24);
@@ -520,17 +804,21 @@
         
     }
     .enlace{
-           
+        display: flex;  
         position: absolute;
-        padding: 1.5rem 3rem;
+       justify-content: baseline;
     }
     .imglogo{
-        height: 15rem;
+        height: 10rem;
+        margin-left: 2rem;
+        margin-top: 4rem;
+        
+        
     }     
     nav ul{
         float: right;
-        margin-right: 6rem;
-        margin-top: 2rem;
+        margin-right: 4rem;
+        margin-top: 5rem;
         
     }
     nav ul li{
@@ -566,7 +854,7 @@
     
     .maingrid{
         display: grid;
-        margin-top: 17rem;
+        margin-top: 25rem;
         grid-template-columns: repeat(2, 1fr);
         
         grid-template-rows: minmax(100px, auto);
@@ -661,35 +949,95 @@
         }
 
     }
+    .titleObras{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 9em;
+        margin-bottom: 5rem;
+        justify-content: center;
+          
+    }
+
+   .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 20px;
+    justify-content: center;
+    margin:0 auto;
+       
+   }
+   .grid-item{
+    position: relative;
+    width: 400px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    cursor: zoom-in;
+    background-color: lightgray;
+    transition: 300ms;
+    }
+   
+    .grid-item:hover{
+        filter:opacity(0.5);
+        
+        
+    }
+    .titlemi{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 11em;
+        justify-content: center; 
+    }
+    .pmi{
+        display: block;      
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 2rem;
+        font-size: medium;
+    }
+    .formdown{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+    .button1{
+        border-radius: 3px;
+        display:flex;
+        font-size: larger;
+        color: #d9ecc0;
+        background-color: #343534;
+        margin-bottom: 7rem;
+        margin-top: 2rem;
+        
+
+
+    }
 
     .footer{
         
         display: flex;
         flex-direction: column;
-        gap: 2rem;
-        text-decoration: none;
-        margin-top: 10rem;
         
 
 
         .titulofooter{
+            margin-top: 2rem;
             display: flex;
             justify-content: center;
-            padding-top: 3rem;
-            font-size: large;
            
         }
 
         .redesfooter{
             display: flex;
             justify-content: center;
-            align-content: space-around;
-           
+            
+            
         }
 
         .footer_img{
-            display: inline-flex;
-            height:  2.5rem;    
+           display: inline-block;
+           padding: 0.5rem;
             
             
         }
@@ -697,17 +1045,77 @@
             display: flex;
             justify-content: center;
             margin-top: 1rem;
-            text-decoration: none;
         }
+       
         .rodockdev{
             font-family: 'league Spartan', sans-serif;
             text-decoration: none;
             color:rgb(124, 124, 122);
-            font-size: small;
-            margin-top: 5rem;
-            
+            font-size: x-small;
+            margin-top: 3rem;                     
+        }
+    } 
+    .titlenov{
+        display: flex;
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(217, 236, 192);
+        margin-top: 7em;
+        justify-content: center; 
+        margin-bottom: 5rem;
+    }
+    .pnov{
+        display: block;      
+        font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin-left: 3rem;
+        font-size: medium; 
+        margin-bottom: 2rem;
+    }
+    .linknov{
+        margin-bottom: 5rem;
+        margin-left: 3rem;
+        a{
+            font-family: 'league Spartan', sans-serif;
+        color:rgb(242, 242, 240);   
+        margin: 0.5rem;
+        font-size: medium; 
+        }
+        
+        
+    }
+    .formform{
+       
+        margin-top: 15rem;
+        background: #343534;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 900px;
+        border-radius: 10px;
+        h3{
+            color: #d9ecc0;
+            font-weight: 800;
+            margin-bottom: 2rem;
+        }
+        input, textarea{
+            border: 0;
+            margin: 1rem 0;
+            padding: 2rem;
+            outline: none;
+            background: #d9ecc0;
+        }
+        button{
+            padding: 1rem;
+            background: #181818;
+            color: #d9ecc0;
+            font-size: large;
+            border: 2;
+            outline: none;
+            cursor: pointer;
+            margin: 2rem auto 0;
+            border-radius: 30px;
 
-            
         }
     }
 
